@@ -1,11 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h3 style="align-items: center;">Hello, My name is Simran Tyagi</h3>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simran - portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: black ;
+        color: white;
+        font-family: 'Poppins', sans-serif;
+      }
+      nav{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 90px;
+        background-color: #B17457;
+      }
+      nav ul{
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li{
+        list-style: none;
+        margin: 0 23px;
+      }
+      nav ul li a{
+        text-decoration: none;
+        color: aliceblue;
+      }
+      nav ul li a:hover{
+        color: black;
+        font-size: 1.2rem;
+      }
+      .left{
+        font-size: 1.5rem;
+      }
+      .firstSection{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 110px 0;
+      }
+      .firstSection > div{
+        width: 30%;
+      }
+      .leftSection{
+        font-size: 2rem;
+      }
+      .leftSection .btn{
+        padding: 12px;
+        background: wheat;
+        color: #B17457;
+        border: 2px solid black;
+        border-radius:6px;
+        font-size: 14px;
+        cursor: pointer;
+      }
+      .rightSection img{
+        align-items: center;
+        width: 120%;
+      }
+      .purple{
+        color:#B17457;
+      }
+      .text-grey{
+        color: gray;
+      }
+      #element{
+        color: #B17457;
+      }
+      .secondSection{
+        max-width: 80vm;
+        margin-left: 40px;
+        margin-right: 40px;
+        height: 80vh;
+      }
+      .secondSection h1{
+        font-size: 1.9rem;
+      }
+      .secondSection .box{
+        background: white;
+        width: 80vm;
+        height: 2px;
+        margin: 56px 0;
+        display: flex;
+      }
+      .secondSection .vertical{
+        height: 93px;
+        width: 1px;
+        background-color: white;
+        margin: 0 100px;
+
+      }
+      .Image-top{
+        width: 23px;
+        position: relative;
+        top: -32px;
+        left:-9px;  
+      }
+      .vertical-text{
+        position: relative;
+        top: 150px;
+        width: 150px;
+        font-size: 14px;
+      }
+      .vertical-desc{
+        position: relative;
+        top: 86px;
+        color: #B17457;
+        width: 150px;
+        font-size: 9px;
+      }
+      footer{
+        background-color: gray;
+        height: 140px;
+      }
+      .footer{
+        display: flex;
+        padding: 23px 122px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">Simran's Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Services</a></li>
+            <li><a href="/">Projects</a></li>
+            <li><a href="/">Contact Me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="firstSection">
+        <div class="leftSection">
+          Hi, My name is <span class="purple">Simran </span> 
+          <div>and I am a passionate</div> 
+          <span id="element"></span>
+          <div class="buttons">
+            <button class="btn">Download Resume</button>
+            <button class="btn">Visit Github</button>
+          </div>
+        </div>
+        <div class="rightSection">
+          <img src="devopsImage.png" alt="">
+        </div>
+      </section>
+      <section class="secondSection">
+        <span class="text-grey">What I have done so far</span>
+        <h1>Work Experience</h1>
+        <div class="box">
+          <div class="vertical">
+            <img class="Image-top" src="web-developer-graphic-clipart-design-free-png.webp" alt="">
+            <div class="vertical-text"></div>
+            Devops Developer (2023-2024)
+          </div>
+          <div class="vertical-desc">
+            Deployed a two-tier flask app
+          </div>
+          <div class="vertical"></div>
+          <div class="vertical"></div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="flooter">
+        <div class="footer-first">
+          <h3>Developer portfolio</h3>
+        </div>
+        <div class="footer-second">
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Projects</li>
+            <li>Contact-Me</li>
+          </ul>
+        </div>
+        <div class="footer-third"></div>
+        <div class="footer-foirth"></div>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed('#element', {
+        strings: ['Devops Developer', 'Web Developer'],
+        typeSpeed: 50,
+      });
+    </script>
+    
+  </body>
+  
 </html>
+<!-- 43:00 sa start krna h header part sa-->
